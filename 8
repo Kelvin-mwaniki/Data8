@@ -1,0 +1,14 @@
+-- Find the average time spent by users on social media per day
+SELECT AVG(time_spent) AS avg_time_spent
+FROM social_media_data;
+
+-- Identify the most popular Netflix show by genre
+SELECT genre, COUNT(*) AS num_shows
+FROM netflix_shows
+GROUP BY genre
+ORDER BY num_shows DESC;
+
+-- Calculate the total number of human stampedes that occurred in a specific year
+SELECT COUNT(*) AS num_stampedes
+FROM human_stampedes
+WHERE year = 2010;
